@@ -19,6 +19,20 @@ const ContactSection = () => {
         message: form.message || null,
       });
       if (error) throw error;
+
+      // Send to Google Sheets via SheetBest
+      await fetch("https://api.sheetbest.com/sheets/c70249ee-942a-45d4-bb93-d70c8c8bb1db", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email || "",
+          business: form.business || "",
+          message: form.message || "",
+        }),
+      });
+      
       toast.success("Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất.");
       setForm({ name: "", phone: "", email: "", business: "", message: "" });
     } catch {
