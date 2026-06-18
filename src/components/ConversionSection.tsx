@@ -4,18 +4,18 @@ import { Zap, BellRing, Compass } from "lucide-react";
 const features = [
   {
     icon: Zap,
-    title: "Đặt phòng nhanh chóng",
-    description: "Khách chỉ cần vài thao tác điền thông tin để hoàn tất đặt phòng ngay trong khung chat.",
+    title: "Trợ Lý Túc Trực 24/7",
+    description: "Chatbot AI thông minh sẵn sàng giải đáp mọi thắc mắc của khách hàng (FAQ, giá cả, quy định, gửi hình ảnh) ngay lập tức, bất kể ngày đêm, không để khách phải chờ đợi.",
   },
   {
     icon: BellRing,
-    title: "Tự động bám đuổi",
-    description: "AI nhắc nhớ và thuyết phục khéo léo những khách hàng còn đang cân nhắc, tăng tỉ lệ chốt đơn.",
+    title: "Quản Lý Đa Kênh Tập Trung",
+    description: "Tiếp nhận và xử lý tin nhắn từ nhiều nền tảng khác nhau (Mess, Tele, Website...) ngay trên một màn hình quản trị duy nhất. Dễ dàng theo dõi và can thiệp kịp thời khi cần.",
   },
   {
     icon: Compass,
-    title: "Khám phá dịch vụ",
-    description: "Giúp khách hàng nhanh chóng tìm hiểu các tiện ích đi kèm (Spa, Tour, Nhà hàng) một cách dễ dàng và hứng thú.",
+    title: "Chốt Đơn & Thông Báo Tự Động",
+    description: "AI tự động thu thập thông tin đặt phòng ngay trong khung chat và lập tức gửi thông báo (Email) về cho chủ nhà để liên hệ chốt khách nhanh nhất.",
   },
 ];
 
