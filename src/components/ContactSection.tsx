@@ -23,7 +23,7 @@ const ContactSection = () => {
       // Send to Google Sheets via SheetBest
       await fetch("https://script.google.com/macros/s/AKfycbzzMXRpjUYvTLKnypy4Ro01HFlekeKlJIZDUI_npjkp3SMn7OFlKWLh93gOO9UGNnfRnw/exec", {
         method: "POST",
-        model: "no-cors",
+        mode: "no-cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
@@ -33,9 +33,9 @@ const ContactSection = () => {
           message: form.message || "",
         }),
       });
+        await fetch("https://app.stayjoy.io.vn/api/track?type=lead", { mode: "no-cors" });
       
       toast.success("Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất.");
-      setForm({ name: "", phone: "", email: "", business: "", message: "" });
     } catch {
       toast.error("Có lỗi xảy ra. Vui lòng thử lại sau.");
     } finally {
