@@ -21,7 +21,7 @@ const ContactSection = () => {
       if (error) throw error;
 
       // Send to Google Sheets via SheetBest
-      await fetch("https://script.google.com/macros/s/AKfycbzpXn2VLoNdDTpM-X_hIxEOT_KyqJkFNi1cc6WEqqvlHzF9MSxcRmO-KBZdcmEYSIkAlg/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbzzMXRpjUYvTLKnypy4Ro01HFlekeKlJIZDUI_npjkp3SMn7OFlKWLh93gOO9UGNnfRnw/exec", {
         method: "POST",
         model: "no-cors",
         headers: { "Content-Type": "application/json" },
